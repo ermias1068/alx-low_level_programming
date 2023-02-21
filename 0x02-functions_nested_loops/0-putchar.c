@@ -1,4 +1,4 @@
-#include "putchar.c"
+#include "putchar.h"
 #include "main.h"
 
 /**
