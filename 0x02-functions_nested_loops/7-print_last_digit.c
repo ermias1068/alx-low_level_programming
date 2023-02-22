@@ -10,9 +10,6 @@ int print_last_digit(int n)
 {
     int last_digit;
 
-    if (n == 0)
-        return 0;
-
     if (n < 0)
         n = -n;
 
