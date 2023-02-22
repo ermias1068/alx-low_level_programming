@@ -1,32 +1,20 @@
-#include "main.h"
+#include "_putchar.c"
 
 /**
- * main - entry point
+ * main - Prints '_putchar' as a message.
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-  char str[] = "_putchar\n";
-  int i = 0;
+	int str[] = {95, 112, 117, 116, 99, 104, 97, 114};
+	int count, sz;
 
-  while (str[i] != '\0')
-    {
-      _putchar(str[i]);
-      i++;
-    }
-
-  return (0);
-}
-
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned and errno is set appropriately.
- */
-int _putchar(char c)
-{
-  return (write(1, &c, 1));
+	sz = sizeof(str) / sizeof(int);
+	for (count = 0; count < sz; count++)
+	{
+		_putchar(str[count]);
+	}
+	_putchar('\n');
+	return (0);
 }
