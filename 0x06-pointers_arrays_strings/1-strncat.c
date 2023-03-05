@@ -1,5 +1,4 @@
-#include "mian.h"
-
+#include "main.h"
 /**
  * _strncat - concatenates two strings,
  * @dest: destination.
@@ -24,5 +23,5 @@ char *_strncat(char *dest, char *src, int n)
 		count++;
 		count2++;
 	}
-wbrw wa	return (dest);
+	return (dest);
 }
