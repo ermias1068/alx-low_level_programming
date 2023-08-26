@@ -1,16 +1,11 @@
-// _puts.c
+#include "main.h"
 
-#include <unistd.h>
-
-/**
- * _puts - Prints a string followed by a new line
- * @s: The input string
- */
 void _puts(char *s) {
-    while (*s != '\0') {
-        write(1, s, 1);
-        s++;
+    int i = 0;
+    while (s[i] != '\0') {
+        _putchar(s[i]);
+        i++;
     }
-    write(1, "\n", 1);
+    _putchar('\n');
 }
 
